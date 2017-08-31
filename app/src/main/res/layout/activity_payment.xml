@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blesh_blue">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:isScrollContainer="false">
+
+        <RelativeLayout
+            android:id="@+id/relative_login_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_blesh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/payment_background" />
+
+            <RelativeLayout
+                android:id="@+id/relative_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_blesh"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/relative_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <EditText
+                        android:id="@+id/editTextAmount"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        android:gravity="bottom"
+                        android:hint="Amount"
+                        android:paddingBottom="3dp"
+                        android:textColor="@color/blesh_blue"
+                        android:textColorHint="@color/blesh_color_transparent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/buttonPay"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/relative_userName"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="5dp"
+                    android:text="Pay/Send"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible"
+                    android:src="@drawable/tick"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
