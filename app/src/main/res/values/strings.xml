@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BleshApp</string>
+    <string name="action_Help">Help</string>
+    <string name="welcome_screen">Hi there! The app is running on background... </string>
+</resources>
